@@ -261,7 +261,7 @@ class BiliUser:
             tasks.append(self.sendDanmaku())
             tasks.append(self.signInGroups())
             await asyncio.gather(*tasks)
-            await self.vote_a_soul()  # 谢谢为A-SOUL投票, 不想投的注释这行
+#             await self.vote_a_soul()  # 谢谢为A-SOUL投票, 不想投的注释这行
         # await self.session.close()
 
     async def sendmsg(self):
